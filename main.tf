@@ -1,4 +1,4 @@
-data "aws_ami" "app_ami" {
+/*data "aws_ami" "app_ami" {
   most_recent = true
 
   filter {
@@ -21,4 +21,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
+}*/
+resource "aws_s3_bucket" "mybucket9230qp" {
+  bucket = "my-demo-bucket-2025-unique"
 }
